@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StudentsPackage.StudentsEditorActivity">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/add_students_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ClassesPackage.ClassesEditorActivity"
+        tools:ignore="MissingConstraints">
+
+        <!-- Overview category -->
+
+        <TextView
+            android:id="@+id/tv_student_name_entry_heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@color/red_theme"
+            android:padding="10dp"
+            android:text="Enter Name for Roll-No"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_starting_roll_no" />
+
+
+            <TextView
+                android:id="@+id/current_student_roll_no"
+                style="@style/EditorFieldStyle"
+                android:text="@string/app_name"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="1" />
+
+
+            <!-- Input fields -->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_username" />
+
+            <EditText
+                android:id="@+id/current_student_name"
+                style="@style/EditorFieldStyle"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="1"
+                android:hint="@string/enter_student_name"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/entry_fields_margin"
+            android:background="@color/red_theme"
+            android:onClick="addstudentname"
+            android:text="Next"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_students_roll_no"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ClassesPackage.ClassesEditorActivity"
+        tools:ignore="MissingConstraints">
+
+        <!-- Overview category -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_starting_roll_no" />
+
+
+            <EditText
+                android:id="@+id/edit_starting_roll_no"
+                style="@style/EditorFieldStyle"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="2"
+                android:hint="@string/starting_roll_no"
+                android:inputType="phone" />
+
+
+            <!-- Input fields -->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_ending_roll_no" />
+
+            <EditText
+                android:id="@+id/edit_ending_roll_no"
+                style="@style/EditorFieldStyle"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="1"
+                android:hint="@string/ending_roll_no"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_add_students_roll_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/entry_fields_margin"
+            android:background="@color/red_theme"
+            android:onClick="makeStudentList"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <size
+                android:width="@dimen/classes_card_dimension"
+                android:height="@dimen/classes_card_dimension" />
+            <gradient
+                android:centerX="0.7"
+                android:centerY="0.3"
+                android:endColor="@color/red_theme"
+                android:gradientRadius="80dp"
+                android:startColor="@color/red_themeoff"
+                android:type="radial" />
+            <corners android:radius="@dimen/class_card_corner" />
+        </shape>
+    </item>
+
+    <item
+        android:width="0dp"
+        android:height="100dp"
+        android:top="-8dp"
+        android:left="-5dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.3"
+                android:centerY="0.7"
+                android:endColor="@color/red_theme"
+                android:gradientRadius="80dp"
+                android:startColor="@color/red_themeoff"
+                android:type="radial" />
+        </shape>
+    </item>
+
+
+</layer-list>

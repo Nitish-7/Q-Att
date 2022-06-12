@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin around the floating action button in CatalogActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="classes_card_dimension">150dp</dimen>
+    <dimen name="entry_fields_margin">10dp</dimen>
+    <dimen name="entry_fields_margin_vertical">5dp</dimen>
+    <dimen name="entry_fields_margin_horizontal">10dp</dimen>
+    <dimen name="entry_fields_height">48dp</dimen>
+    <dimen name="class_card_margin_horizontal">10dp</dimen>
+    <dimen name="class_card_margin_vertical">5dp</dimen>
+    <dimen name="class_card_corner">20dp</dimen>
+    <dimen name="student_attendance_percent_tv_size">25dp</dimen>
+    <dimen name="card_text_dim_name_atten">36dp</dimen>
+    <dimen name="card_text_atten_value_dim">56dp</dimen>
+    <dimen name="card_roll_text_dim">70dp</dimen>
+</resources>

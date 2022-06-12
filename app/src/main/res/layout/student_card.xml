@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="108dp"
+    android:layout_marginBottom="35dp"
+    android:layout_marginHorizontal="40dp"
+    android:background="@drawable/student_card_bg"
+    android:elevation="20dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_roll_no_bg"
+        android:gravity="center"
+        android:text="102"
+        android:textColor="@color/card_roll_no_text"
+        android:textSize="@dimen/card_roll_text_dim"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        tools:ignore="MissingConstraints"
+         />
+
+    <TextView
+        android:id="@+id/tv_card_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:layout_marginStart="8dp"
+        android:text="NITISH KUMAR"
+        android:textColor="@color/student_card_text"
+        android:textSize="@dimen/card_text_dim_name_atten"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/student_card_text"
+        android:text="ATTENDANCE"
+        android:textSize="@dimen/card_text_dim_name_atten"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_student_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_student_name" />
+
+    <TextView
+        android:id="@+id/tv_card_student_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="12/27\n40%"
+        android:textColor="@color/student_card_text"
+        android:textSize="@dimen/card_text_atten_value_dim"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

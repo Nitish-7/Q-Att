@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/add_students_roll_no"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        android:orientation="vertical"
+
+        android:padding="10dp"
+        tools:context=".ClassesPackage.ClassesEditorActivity"
+        tools:ignore="MissingConstraints">
+
+        <!-- Overview category -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_class" />
+
+
+            <EditText
+                android:id="@+id/edit_class_name"
+                style="@style/EditorFieldStyle"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="2"
+                android:hint="@string/hint_class_name"
+                android:inputType="textCapCharacters" />
+
+
+            <!-- Input fields -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+            <!-- class section drop-down spinner -->
+            <Spinner
+                android:id="@+id/spinner_class_section"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="0dp"
+                android:entries="@array/array_section_options"
+                android:padding="@dimen/entry_fields_margin"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinner_class_year"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="0dp"
+                android:entries="@array/array_year_options"
+                android:padding="@dimen/entry_fields_margin"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_subject" />
+
+            <EditText
+                android:id="@+id/edit_subject_name"
+                style="@style/EditorFieldStyle"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="1"
+                android:hint="@string/hint_subject_name"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/entry_fields_margin_horizontal"
+            android:layout_marginVertical="@dimen/entry_fields_margin_vertical"
+            android:background="@drawable/entry_fields_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/entry_fields_margin"
+                app:srcCompat="@drawable/ic_subject_code" />
+
+            <EditText
+                android:id="@+id/edit_subject_code"
+                style="@style/EditorFieldStyle"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="@dimen/entry_fields_margin_horizontal"
+                android:layout_weight="1"
+                android:hint="@string/hint_subject_code"
+                android:inputType="textCapCharacters" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_bg"
+            android:onClick="saveNewClass"
+            app:srcCompat="@drawable/ic_save" />
+    </LinearLayout>
+
+
+</FrameLayout>

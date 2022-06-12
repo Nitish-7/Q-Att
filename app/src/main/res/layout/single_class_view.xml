@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_pet_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/class_card_bg"
+    android:elevation="2dp"
+    android:padding="0dp">
+<!--TODO dot dot add kro aur touch pe pura nam dikhae a-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/class_card_margin_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_class_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="MECHANIcal"
+                android:textAllCaps="true"
+                android:textColor="@color/class_card_text_class_name_color"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/tv_section" />
+
+            <TextView
+                android:id="@+id/tv_section"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/class_card_margin_horizontal"
+
+                android:background="@drawable/class_roll_bg"
+                android:fontFamily="sans-serif-medium"
+                android:text="B"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/class_card_text_color_sec"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/class_details_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_class_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/class_sub_details_bg"
+                android:text="1st year"
+                android:textColor="@color/class_card_text_color_sec"
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"
+
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_class_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_class_name"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_subject_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/class_sub_details_bg"
+                android:text="MECHANICAL .."
+
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"
+                android:textColor="@color/class_card_text_color_sec"
+                android:textColorHint="@color/class_card_text_color_sec"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_class_year"
+                app:layout_constraintTop_toBottomOf="@+id/tv_class_year" />
+
+            <TextView
+                android:id="@+id/tv_subject_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/class_sub_details_bg"
+                android:text="KAS403"
+
+                android:textStyle="bold"
+                android:paddingHorizontal="5dp"
+                android:textAllCaps="true"
+                android:textColor="@color/class_card_text_color_sec"
+                android:textColorHint="@color/class_card_text_color_sec"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_subject_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subject_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
