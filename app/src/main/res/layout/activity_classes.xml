@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,90 +8,178 @@
     tools:context=".ClassesPackage.ClassesActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/classes_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="visible">
 
-        <SearchView
-            android:id="@+id/searchView2"
+        <ImageView
+            android:id="@+id/classes_search_view_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/classes_search_view"
+            app:layout_constraintStart_toStartOf="@+id/classes_search_view"
+            app:layout_constraintTop_toTopOf="@+id/classes_search_view" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/classes_search_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/entry_fields_bg"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@color/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-<!--            TODO search bar implement for class aur blank page pe text shi krna h/>-->
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryHint="Search a class" >
+
+        </androidx.appcompat.widget.SearchView>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/petsRv"
+            android:id="@+id/classesRv"
             android:layout_width="0dp"
-
             android:layout_height="0dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="6dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView2"
+            app:layout_constraintTop_toBottomOf="@+id/classes_search_view"
             tools:listitem="@layout/single_class_view" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:id="@+id/empty_pet_view"
+        android:id="@+id/empty_classes_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/textView2"
             style="@style/empty_view_title_text_style"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:textAlignment="center"
             android:text="@string/empty_view_classes_text_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addStudents" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_empty_class" />
 
         <TextView
             android:id="@+id/textView3"
             style="@style/empty_view_description_text_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginHorizontal="70dp"
             android:text="@string/empty_view_classes_text_description"
-            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <ImageView
-            android:id="@+id/addStudents"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="200dp"
+            android:id="@+id/iv_empty_class"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:alpha="0.8"
+            android:layout_marginBottom="180dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_class" />
+            app:srcCompat="@drawable/ic_empty_classes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/premium_classes_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_buy_premium"
+            style="@style/empty_view_title_text_style"
+            android:text="Coming Soon"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_buy_premium" />
+
+        <TextView
+            android:id="@+id/tv_description_for_premium"
+            style="@style/empty_view_description_text_style"
+            android:text="We're still working on the time-table feature, and we'll let you know when it's ready."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_buy_premium" />
+
+        <ImageView
+            android:id="@+id/iv_buy_premium"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_time_table" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/loading_classes_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_loading_attendance_record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="80dp"
+            android:indeterminateTint="@color/red_theme_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:backgroundTint="@color/white"
-        app:borderWidth="0dp"
+        android:visibility="gone"
+        app:layout_anchor="@id/bottomAppBar"
         android:foreground="@drawable/fb_button_bg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/fb_button_bg"
-
-        android:layout_margin="20dp"
         />
-</RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/offwhite"
+        app:fabCradleMargin="8dp"
+        app:elevation="2dp"
+        android:paddingHorizontal="15dp"
+        app:fabCradleRoundedCornerRadius="35dp"
+        android:layout_gravity="bottom">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            android:background="@color/transparent"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

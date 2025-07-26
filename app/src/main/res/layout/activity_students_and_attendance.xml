@@ -8,25 +8,31 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
+        android:elevation="3dp"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:paddingTop="10dp"
-        app:tabTextColor="@color/offwhite"
+        android:layout_height="40dp"
+        android:background="@color/red_theme_color"
+        app:tabTextColor="@color/offwhite2"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicator="@drawable/tab_bg"
+        app:tabIndicatorColor="@color/white"
         app:tabSelectedTextColor="@color/white"
-        android:background="@color/red_theme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/student_fragment_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="students" />
+            android:text="Students" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/attendance_fragment_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="attendace" />
+            android:text="Attendace" />
 
 
     </com.google.android.material.tabs.TabLayout>

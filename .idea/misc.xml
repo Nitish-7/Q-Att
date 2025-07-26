@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/all_attendance_bg.xml" value="0.1625" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/black_n_white_card_bg.xml" value="0.137" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/blue_per.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/blue_stu.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/button_bg.xml" value="0.1115" />
@@ -13,42 +14,134 @@
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/class_sub_details_bg.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/classes_card_bg.xml" value="0.1115" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/classes_seleted_fg.xml" value="0.1115" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/classes_unseleted_fg.xml" value="0.1" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/edit_dialogbox_card_bg.xml" value="0.1495" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/end_date_bg.xml" value="0.1" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/entry_fields_bg.xml" value="0.1495" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/fb_button_bg.xml" value="0.1165" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/greeb_stu.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/green_per.xml" value="0.1625" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/green_stu.xml" value="0.137" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/grey_per.xml" value="0.1" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/grey_stu.xml" value="0.1" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_add_students.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_add_subject.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_applogo.xml" value="0.1635" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_baseline_download_for_offline_24.xml" value="0.1625" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_calendar.xml" value="0.1" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_class.xml" value="0.1115" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_delete.xml" value="0.197" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_empty_classes.xml" value="0.137" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_error.xml" value="0.1305" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_excel.xml" value="0.1625" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_go.xml" value="0.137" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_intro_screen_1.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_intro_screen_2.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_intro_screen_3.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_logout.xml" value="0.1805" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_roll_no_bg.xml" value="0.1115" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_select.xml" value="0.1115" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_share.xml" value="0.1625" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_share_23636.xml" value="0.1625" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_success.xml" value="0.182" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/ic_time_table.xml" value="0.137" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/indicator_default.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/indicator_selected.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/indicator_selector.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/loading_screen.xml" value="0.131" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/login_window_red_bg.xml" value="0.135" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/no_bg.xml" value="0.1" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/percentage_background.xml" value="0.1115" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/percentage_bg.xml" value="0.1115" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/student_card_bg.xml" value="0.1115" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/popup_change_attendance_bg.xml" value="0.2425" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/popup_pointer_bg.xml" value="0.1" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/red_per.xml" value="0.1" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/red_stu.xml" value="0.1" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/selected_button_bg.xml" value="0.182" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/setting_bg.xml" value="0.1805" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/star_date_bg.xml" value="0.1" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/student_card_bg.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/student_card_bg_with_elevation.xml" value="0.152" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/student_card_vertical_margin.xml" value="0.1435" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/student_list_bg.xml" value="0.1115" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/swipe_down_fg.xml" value="0.1115" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/swipe_up_fg.xml" value="0.1115" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/tab_bg.xml" value="0.1" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/take_attendance_button_bg.xml" value="0.1115" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/unselected_button_bg.xml" value="0.182" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/unselected_button_white_bg.xml" value="0.1905" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/wallet_1.xml" value="0.143" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/white_student_card_bg.xml" value="0.137" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/yellow_per.xml" value="0.1" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/drawable/yellow_stu.xml" value="0.264" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_attendance.xml" value="0.152" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_attendance_record.xml" value="0.176" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_classes.xml" value="0.136" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_classes_editer.xml" value="0.2" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_sign_in.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_classes.xml" value="0.144" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_classes_editer.xml" value="0.264" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_forget_password.xml" value="0.136" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_intro.xml" value="0.136" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_phone_sign_in.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_sign_in.xml" value="0.152" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_splash_screen.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_students.xml" value="0.264" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_students_and_attendance.xml" value="0.176" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_students_editor.xml" value="0.136" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_students_and_attendance.xml" value="0.136" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_students_editor.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/activity_take_attendance.xml" value="0.152" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/before_save_attendance_layout.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/dialog_confirm_exit_take_attendace.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/email_verification_screen.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/error_screen.xml" value="0.2" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/fragment_attendance_record.xml" value="0.176" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/fragment_students.xml" value="0.2" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/single_class_view.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/intro_screen_layout.xml" value="0.16" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/popup_attendance_change.xml" value="0.152" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/popup_pointer.xml" value="0.2" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/popup_skip_button_onboarding_guide.xml" value="0.152" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/settings_activity.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/single_class_view.xml" value="0.264" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/single_month_attendance_view.xml" value="0.6" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/student_card.xml" value="0.152" />
-        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/students_list_item.xml" value="0.264" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/student_strip.xml" value="0.12" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/students_list_item.xml" value="0.176" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/switch_item.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/layout/taken_attendance_item_view.xml" value="0.4" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/add_students_menu.xml" value="0.72" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.23125" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/change_attendance_mode.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/item_selection_menu.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/menu_catalog.xml" value="0.176" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/menu_editor.xml" value="0.136" />
+        <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/menu/take_attendance_menu.xml" value="0.264" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/xml/provider_path.xml" value="0.16510416666666666" />
         <entry key="..\:/Users/91979/AndroidStudioProjects/fireone/app/src/main/res/xml/root_preferences.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/class_sub_details_bg.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/edit_dialogbox_card_bg.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/fb_button_bg.xml" value="0.214" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/ic_empty_attendance.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/ic_ending_roll_no.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/ic_save.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/ic_subject.xml" value="0.1415" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/login_text_entry_bg.xml" value="0.1925" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/popup_pointer_bg.xml" value="0.1925" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/drawable/red_stu.xml" value="0.1925" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/activity_classes.xml" value="0.136" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/activity_intro.xml" value="0.264" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/activity_sign_in.xml" value="0.152" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/activity_splash_screen.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/activity_students.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/before_save_attendance_layout.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/error_screen.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/fragment_students.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/spinner_custom_dropdown.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/layout/taken_attendance_item_view.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/menu/add_students_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/menu/item_selection_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/menu/menu_editor.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/menu/profile_menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/91979/Desktop/Project-Q/app/src/main/res/menu/take_attendance_menu.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>
@@ -57,5 +150,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12" />
+      </ProjectState>
+    </option>
   </component>
 </project>

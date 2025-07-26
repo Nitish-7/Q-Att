@@ -1,46 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:layout_marginHorizontal="14dp"
     android:layout_marginVertical="5dp"
     android:orientation="horizontal">
-<!--TODO dot dot in name aur click pe name roll no attended class with percent-->
+
     <TextView
         android:id="@+id/tv_student_attendance_percent"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_gravity="center"
+        android:background="@drawable/blue_per"
         android:gravity="center"
         android:text="100"
-        android:textColor="@color/black"
-        android:textSize="@dimen/student_attendance_percent_tv_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/student_attendance_percent_tv_size"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingHorizontal="10dp"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
 
         <TextView
             android:id="@+id/tv_student_roll_no"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2000970130425"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textColor="@color/black_student_text_color"
+            android:textStyle="normal"
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/tv_student_name"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:text="Add name"
-            android:textColor="@color/offblack"
-            android:textSize="16sp" />
+            android:textColor="@color/black_student_text_light_color"
+            android:textSize="15sp" />
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="10dp"
+        >
+        <ImageView
+            android:id="@+id/student_selected_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_select"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/student_overview_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_go"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>

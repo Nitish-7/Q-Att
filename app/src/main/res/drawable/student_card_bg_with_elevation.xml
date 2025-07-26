@@ -1,0 +1,6 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/white_student_card_bg"
+        android:left="1dp"
+        android:right="1dp"/>
+    <item android:drawable="@drawable/black_n_white_card_bg"/>
+</layer-list>

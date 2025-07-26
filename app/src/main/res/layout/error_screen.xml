@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:background="@drawable/button_bg"
+    android:backgroundTint="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="-20dp">
+
+        <ImageView
+            android:id="@+id/iv_error_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/error_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:text="@string/no_internet_dialog_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_error_dialog" />
+
+        <TextView
+            android:id="@+id/error_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/no_internet_dialog_title_desc"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="@color/offblack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/error_title" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_error_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/red_theme_color"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_error_try_again"
+            app:layout_constraintEnd_toEndOf="@+id/btn_error_try_again"
+            app:layout_constraintStart_toStartOf="@+id/btn_error_try_again"
+            app:layout_constraintTop_toBottomOf="@+id/error_description" />
+
+        <Button
+            android:id="@+id/btn_error_try_again"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/red_theme_color"
+            android:text="try again"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/error_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

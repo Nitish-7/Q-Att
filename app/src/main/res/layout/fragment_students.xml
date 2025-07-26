@@ -14,12 +14,14 @@
         android:background="@color/white"
         tools:context=".StudentsPackage.StudentsActivity">
 
-        <SearchView
-            android:id="@+id/searchView"
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/student_search_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="14dp"
             android:layout_marginVertical="10dp"
+            app:queryHint="Search a student"
+            app:iconifiedByDefault="false"
             android:background="@drawable/entry_fields_bg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,20 +34,19 @@
             android:layout_height="0dp"
             android:orientation="vertical"
             android:paddingTop="@dimen/entry_fields_margin_vertical"
+            android:layout_marginBottom="10dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@+id/bt_take_attendance"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            app:layout_constraintTop_toBottomOf="@+id/student_search_view"
             tools:listitem="@layout/students_list_item" />
 
         <Button
             android:id="@+id/bt_take_attendance"
             style="@style/takeAttendanceBtStyle"
             android:layout_width="match_parent"
-
-            android:onClick="takeAttendance"
-            android:text="TAKE ATTENDANCE"
+            android:text="@string/take_attendance_button_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,38 +62,84 @@
             <TextView
                 android:id="@+id/textView2"
                 style="@style/empty_view_title_text_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/empty_view_students_text_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/addStudents"
+                app:layout_constraintTop_toBottomOf="@+id/iv_add_students_empty_student_view"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView3"
                 style="@style/empty_view_description_text_style"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginHorizontal="70dp"
                 android:text="@string/empty_view_students_text_description"
-                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <ImageView
-                android:id="@+id/addStudents"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginBottom="80dp"
+                android:id="@+id/iv_add_students_empty_student_view"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="120dp"
                 android:onClick="addStudents"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_add_students" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/loading_students_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_loading_students_list"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="80dp"
+                android:indeterminateTint="@color/red_theme_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fetching_students_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/offwhite"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_fetching_students_screen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                android:text=""
+                android:textColor="@color/red_theme_color"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:indeterminateTint="@color/red_theme_color"
+                android:id="@+id/progress_bar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

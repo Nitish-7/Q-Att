@@ -5,19 +5,69 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
         <item name="android:windowBackground">@drawable/edit_dialogbox_card_bg</item>
         <item name="android:windowIsFloating">true</item>
+        <item name="android:statusBarColor">@color/white</item>
         <item name="android:editTextBackground">@null</item>
     </style>
 
+    <!-- intro activity theme -->
+    <style name="Theme.AppCompat.DayNight.NoActionBar.IntroActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@drawable/loading_screen</item>
+
+    </style>
+
+    <style name="EndDatePickerTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@drawable/edit_dialogbox_card_bg</item>
+        <item name="colorPrimary">@color/end_date_color</item>
+        <item name="colorPrimaryDark">@color/end_date_color</item>
+        <item name="colorAccent">@color/end_date_color</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:editTextBackground">@null</item>
+    </style>
+
+    <style name="StartDatePickerTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@drawable/edit_dialogbox_card_bg</item>
+        <item name="colorPrimary">@color/start_date_color</item>
+        <item name="colorPrimaryDark">@color/start_date_color</item>
+        <item name="colorAccent">@color/start_date_color</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:editTextBackground">@null</item>
+    </style>
+
+    <style name="StudentOverviewTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+<!--        <item name="android:layout_marginStart">10dp</item>-->
+<!--        <item name="android:layout_marginEnd">10dp</item>-->
+<!--        <item name="android:layout_marginBottom">-10dp</item>-->
+<!--        <item name="android:layout_marginTop">-10dp</item>-->
+        <item name="android:editTextBackground">@null</item>
+    </style>
     <!-- Font Style -->
     <style name="empty_view_title_text_style" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:textColor">@color/offblack2</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
     </style>
+
     <style name="empty_view_description_text_style" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">2dp</item>
         <item name="android:textColor">@color/offblack3</item>
-        <item name="android:textSize">13sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">30dp</item>
     </style>
 
     <!-- Font Style  for empty view-->
@@ -29,8 +79,10 @@
     <!-- red theme buttons -->
     <style name="LoginButtonStyle" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:background">@drawable/button_bg</item>
-        <item name="backgroundTint">@color/red_theme</item>
+        <item name="backgroundTint">@color/red_theme_color</item>
         <item name="elevation">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textScaleX">0.95</item>
         <item name="android:textSize">20sp</item>
     </style>
@@ -38,17 +90,20 @@
     <!-- red theme buttons -->
     <style name="takeAttendanceBtStyle" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:background">@drawable/take_attendance_button_bg</item>
-        <item name="backgroundTint">@color/red_theme</item>
+        <item name="backgroundTint">@color/red_theme_color</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">10dp</item>
+        <item name="android:layout_marginVertical" tools:targetApi="o">5dp</item>
         <item name="elevation">20dp</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <!-- Theme of the editor -->
     <style name="EditorTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/red_theme</item>
-        <item name="colorPrimaryDark">@color/red_theme</item>
+        <item name="colorPrimary">@color/red_theme_color</item>
+        <item name="colorPrimaryDark">@color/red_theme_color</item>
         <item name="colorAccent">@color/red_theme2</item>
     </style>
 
@@ -69,19 +124,26 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 
-    <!-- Style for the measurement units for an EditText field in the editor -->
-    <style name="EditorUnitsStyle">
+    <!-- Style for an date selection field in the editor -->
+    <style name="DateSelectionStyle">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_alignParentRight">true</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingTop">16dp</item>
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 
+    <style name="password_text_style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/offblack</item>
+    </style>
 
-
+    <color name="end_date_color">#43B4E1</color>
+    <color name="start_date_color">#91C62E</color>
 </resources>

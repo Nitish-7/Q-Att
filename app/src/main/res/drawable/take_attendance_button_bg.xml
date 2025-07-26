@@ -3,9 +3,8 @@
 
     <item>
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <corners
-                />
-            <solid android:color="@color/red" />
+            <corners android:radius="20dp"/>
+            <solid android:color="@color/white" />
         </shape>
     </item>
 </layer-list>

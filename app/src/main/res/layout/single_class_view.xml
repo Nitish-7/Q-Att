@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/single_pet_view"
-    android:layout_width="wrap_content"
+    android:id="@+id/single_class_view"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="4dp"
-    android:layout_marginTop="5dp"
+    android:layout_margin="4dp"
     android:background="@drawable/class_card_bg"
     android:elevation="2dp"
-    android:padding="0dp">
-<!--TODO dot dot add kro aur touch pe pura nam dikhae a-->
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
     <LinearLayout
+
+        android:id="@+id/class_card"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingVertical="@dimen/class_card_margin_vertical">
+        android:paddingVertical="@dimen/class_card_margin_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,41 +36,44 @@
             <TextView
                 android:id="@+id/tv_class_name"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
                 android:fontFamily="sans-serif-medium"
-                android:text="MECHANIcal"
+                android:text="MECHANIcaldsfsdfsdfsdfsdfssdfsdfsdfsdfkhkhkhhjsf"
                 android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:textAlignment="textStart"
                 android:textColor="@color/class_card_text_class_name_color"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@id/tv_section" />
+                app:layout_constraintEnd_toStartOf="@id/tv_section"
+                tools:ignore="RtlCompat" />
 
             <TextView
                 android:id="@+id/tv_section"
                 android:layout_width="50dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="@dimen/class_card_margin_horizontal"
-
                 android:background="@drawable/class_roll_bg"
                 android:fontFamily="sans-serif-medium"
                 android:text="B"
+                android:gravity="center"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/class_card_text_color_sec"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                tools:ignore="RtlCompat" />
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="8dp"
             android:background="@drawable/class_details_bg"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="25dp"
             android:orientation="vertical">
 
             <TextView
@@ -72,13 +82,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
                 android:background="@drawable/class_sub_details_bg"
+                android:paddingHorizontal="8dp"
                 android:text="1st year"
                 android:textColor="@color/class_card_text_color_sec"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:paddingHorizontal="5dp"
-
-                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_class_name"
                 app:layout_constraintTop_toBottomOf="@+id/tv_class_name"
                 tools:ignore="MissingConstraints" />
@@ -89,14 +99,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
                 android:background="@drawable/class_sub_details_bg"
-                android:text="MECHANICAL .."
-
-                android:textStyle="bold"
-                android:paddingHorizontal="5dp"
+                android:paddingHorizontal="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="MECHANICAL Engineering hgskdkjk sjhdjhsajdhj akjhsfkj"
                 android:textColor="@color/class_card_text_color_sec"
                 android:textColorHint="@color/class_card_text_color_sec"
-                android:textSize="20sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/tv_class_year"
                 app:layout_constraintTop_toBottomOf="@+id/tv_class_year" />
 
@@ -105,20 +117,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginVertical="12dp"
+                android:gravity="center_vertical"
                 android:background="@drawable/class_sub_details_bg"
+                android:paddingHorizontal="8dp"
                 android:text="KAS403"
-
-                android:textStyle="bold"
-                android:paddingHorizontal="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:textAllCaps="true"
                 android:textColor="@color/class_card_text_color_sec"
                 android:textColorHint="@color/class_card_text_color_sec"
-                android:textSize="20sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tv_subject_name"
                 app:layout_constraintTop_toBottomOf="@+id/tv_subject_name" />
         </LinearLayout>
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/iv_select_class"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_select"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

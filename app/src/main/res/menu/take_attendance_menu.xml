@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/save_attendance_menu_item"
+        android:icon="@drawable/ic_select"
+        android:title="Save Attendance"
+        android:visible="false" />
+    <item
+        android:id="@+id/change_attendance_mode_menu_item"
+        android:icon="@drawable/ic_click_mode"
+        android:title="change_attendance_mode"
+        app:showAsAction="always" />
+
+</menu>

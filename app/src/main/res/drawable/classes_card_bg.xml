@@ -9,7 +9,7 @@
             <gradient
                 android:centerX="0.7"
                 android:centerY="0.3"
-                android:endColor="@color/red_theme"
+                android:endColor="@color/red_theme_color"
                 android:gradientRadius="80dp"
                 android:startColor="@color/red_themeoff"
                 android:type="radial" />
@@ -26,7 +26,7 @@
             <gradient
                 android:centerX="0.3"
                 android:centerY="0.7"
-                android:endColor="@color/red_theme"
+                android:endColor="@color/red_theme_color"
                 android:gradientRadius="80dp"
                 android:startColor="@color/red_themeoff"
                 android:type="radial" />

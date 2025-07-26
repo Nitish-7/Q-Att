@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <size
+                android:width="@dimen/classes_card_dimension"
+                android:height="@dimen/classes_card_dimension" />
+            <corners android:radius="@dimen/class_card_corner" />
+        </shape>
+    </item>
+
+</layer-list>

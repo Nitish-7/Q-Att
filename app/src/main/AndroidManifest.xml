@@ -1,56 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.android.quickAttendance">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    package="com.query">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:requestLegacyExternalStorage="true"
+        android:name=".QueryApplicationClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Fireone">
-        <activity
-            android:name=".StudentsPackage.StudentsAndAttendanceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StudentsPackage.AttendanceRecordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity
-            android:name=".StudentsPackage.StudentsEditorActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.ClassesEditorTheme" />
-        <activity
-            android:name=".StudentsPackage.StudentsActivity"
-            android:label="Students" />
-        <activity android:name=".SplashScreenActivity" />
-        <activity
-            android:name=".ClassesPackage.ClassesEditorActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.ClassesEditorTheme" />
-        <activity
-            android:name=".ClassesPackage.ClassesActivity"
-            android:exported="true"
-            android:label="@string/title_activity_classes" />
-        <activity
-            android:name=".SignInActivity"
+        android:theme="@style/Theme.MyAppTheme">
+
+        <receiver
+            android:name=".InitializerPackage.ConnectivityReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
 
+        <activity
+            android:name=".OnboardingAndGuidePackage.IntroActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.IntroActivityTheme"
+            tools:ignore="LockedOrientationActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".RegistrationPackage.ForgetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".RegistrationPackage.PhoneSignInActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentsPackage.StudentsAndAttendanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".RegistrationPackage.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentsPackage.StudentsEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.ClassesEditorTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ClassesPackage.ClassesEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.ClassesEditorTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ClassesPackage.ClassesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_classes"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".RegistrationPackage.SignInActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+
+        </activity>
         <activity
             android:name=".TakeAttendancePackage.TakeAttendanceActivity"
-            android:label="Take Attendance" />
+            android:label="Take Attendance"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -58,8 +101,17 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_path"/>
+                android:resource="@xml/provider_path" />
         </provider>
+
+<!--        <provider-->
+<!--            android:name="androidx.startup.InitializationProvider"-->
+<!--            android:authorities="${applicationId}.androidx-startup"-->
+<!--            android:exported="false"-->
+<!--            tools:node="merge">-->
+<!--            <meta-data android:name="com.query.InitializerPackage.MyLibraryInitializer"-->
+<!--                tools:node="remove" />-->
+<!--        </provider>-->
     </application>
 
 </manifest>

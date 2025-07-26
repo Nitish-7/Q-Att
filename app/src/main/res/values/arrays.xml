@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- These are the options displayed in the gender drop-down Spinner -->
-    <string-array name="array_gender_options">
-        <item>@string/gender_unknown</item>
-        <item>@string/gender_male</item>
-        <item>@string/gender_female</item>
-    </string-array>
-
     <string-array name="array_section_options">
         <item>Sec</item>
         <item>A</item>
@@ -20,21 +13,19 @@
     </string-array>
 
     <string-array name="array_year_options">
-        <item>Year</item>
-        <item>1st</item>
-        <item>2nd</item>
-        <item>3rd</item>
-        <item>4th</item>
-        <item>5th</item>
-    </string-array>
-    <!-- Reply Preference -->
-    <string-array name="reply_entries">
-        <item>Reply</item>
-        <item>Reply to all</item>
+        <item>Session</item>
+        <item>1st Sem</item>
+        <item>2nd Sem</item>
+        <item>3rd Sem</item>
+        <item>4th Sem</item>
+        <item>5th Sem</item>
+        <item>6th Sem</item>
+        <item>7th Sem</item>
+        <item>8th Sem</item>
+        <item>9th Sem</item>
+        <item>10th Sem</item>
+        <item>11th Sem</item>
+        <item>12th Sem</item>
     </string-array>
 
-    <string-array name="reply_values">
-        <item>reply</item>
-        <item>reply_all</item>
-    </string-array>
 </resources>

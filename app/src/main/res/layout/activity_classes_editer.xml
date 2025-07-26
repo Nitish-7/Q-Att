@@ -8,12 +8,11 @@
 
     <LinearLayout
         android:id="@+id/add_students_roll_no"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:elevation="5dp"
         android:orientation="vertical"
-
         android:padding="10dp"
         tools:context=".ClassesPackage.ClassesEditorActivity"
         tools:ignore="MissingConstraints">
@@ -135,13 +134,18 @@
                 android:inputType="textCapCharacters" />
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/imageButton"
+        <Button
+            android:id="@+id/btn_save_student"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="80dp"
+            android:layout_marginHorizontal="40dp"
             android:layout_marginVertical="10dp"
             android:background="@drawable/button_bg"
+            android:backgroundTint="@color/red_theme_color"
+            android:text="save"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:onClick="saveNewClass"
             app:srcCompat="@drawable/ic_save" />
     </LinearLayout>

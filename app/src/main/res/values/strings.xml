@@ -1,47 +1,19 @@
 <resources>
-    <string name="app_name">Quiatt</string>
+    <string name="app_name">Query</string>
 
-    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
     <string name="sign_out">Sign Out</string>
 
-    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
     <string name="settings">Settings</string>
 
-    <!-- Title for the activity to add a new pet [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_new_pet">Add a Pet</string>
-
-    <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>
 
-    <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
 
-    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
-    <string name="category_overview">Overview</string>
-
-    <!-- Label for gender information in the editor [CHAR LIMIT=30] -->
-    <string name="category_gender">Gender</string>
-
-    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
-    <string name="category_measurement">Measurement</string>
-
-    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
     <string name="hint_class_name">Class</string>
 
-    <!-- Text hint for breed field in the editor [CHAR LIMIT=30] -->
     <string name="hint_subject_name">Subject</string>
 
-    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
     <string name="hint_subject_code">Subject code</string>
-
-    <!-- Label for dropdown menu option if the pet's gender is unknown [CHAR LIMIT=20] -->
-    <string name="gender_unknown">Unknown</string>
-
-    <!-- Label for dropdown menu option if the pet is male [CHAR LIMIT=20] -->
-    <string name="gender_male">Male</string>
-
-    <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
-    <string name="gender_female">Female</string>
 
     <string name="log_in_button_text">LOG IN</string>
 
@@ -60,13 +32,19 @@
     <string name="sec_h">H</string>
 
     <!-- spinner strings of year -->
-    <string name="year_1st">1st</string>
-    <string name="year_2nd">2nd</string>
-    <string name="year_3rd">3rd</string>
-    <string name="year_4th">4th</string>
-    <string name="year_5th">5th</string>
+    <string name="year_1st">1st Sem</string>
+    <string name="year_2nd">2nd Sem</string>
+    <string name="year_3rd">3rd Sem</string>
+    <string name="year_4th">4th Sem</string>
+    <string name="year_5th">5th Sem</string>
+    <string name="year_6th">6th Sem</string>
+    <string name="year_7th">7th Sem</string>
+    <string name="year_8th">8th Sem</string>
+    <string name="year_9th">9th Sem</string>
+    <string name="year_10th">10th Sem</string>
+    <string name="year_11th">11th Sem</string>
+    <string name="year_12th">12th Sem</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_settings">Settings</string>
 
@@ -84,17 +62,174 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="starting_roll_no">Starting Roll-No</string>
-    <string name="ending_roll_no">Ending Roll-No</string>
-    <string name="title_activity_classes">Your Classes</string>
+    <string name="starting_roll_no">First Roll-no</string>
+    <string name="ending_roll_no">Last Roll-No</string>
+    <string name="title_activity_classes">Classes</string>
+    <string name="title_activity_classes_time_table">Time Table</string>
 
+<!--    empty views text-->
+    <string name="empty_view_attendance_text_title">No Attendance Found</string>
+    <string name="empty_view_attendance_text_description">Effortlessly track attendance and student progress by taking attendance to view, download, and share student records.</string>
+
+    <string name="empty_view_students_text_title">No Students Found</string>
+    <string name="empty_view_students_text_description">Add students easily - Import students from Excel sheet or add manually to start taking attendance.</string>
+
+    <string name="empty_view_classes_text_title">"No Classes Added</string>
+    <string name="empty_view_classes_text_description">Create a new class and add students to take attendance for upcoming lectures.</string>
 
     <string name="enter_student_name">name</string>
-    <string name="empty_view_attendance_text_description">Start Taking Attendance To Download or Share</string>
-    <string name="empty_view_attendance_text_title">No Attendance Found</string>
-    <string name="empty_view_students_text_description">Import students list from Excel sheet or add class starting and ending roll-no and add students name manually</string>
-    <string name="empty_view_students_text_title">Nothing here</string>
-    <string name="empty_view_classes_text_title">Nothing here yet.</string>
-    <string name="empty_view_classes_text_description">You havn\'t added any class yet \nadd Classes to take attendace</string>
+    <string name="excel_sheet_student_name">Student Name</string>
+    <string name="excel_sheet_students_roll_no">Roll Number</string>
+    <string name="attendance_downloading_hint_text">Download attendance records for a specific date range.</string>
+    <string name="take_attendance_button_text">Take Attendance</string>
+    <string name="download_attendance_button_text">Download</string>
+    <string name="excel_sheet_student_classes_attended">Classes Attended</string>
+    <string name="excel_sheet_student_attendance_percentage">Attendance</string>
+    <string name="intent_extra_add_new_student">add new student</string>
+
+<!--    dialog text-->
+    <string name="text_dialog_confirm_back_from_attendance_activity">Would you like to confirm the dismissal of attendance?</string>
+    <string name="text_dialog_confirm_taken_attendance">Have you marked attendance?</string>
+    <string name="text_dialog_attendance_saved">Attendance saved successfully</string>
+    <string name="text_dialog_attendance_saving">Attendance is being saved. Please wait.</string>
+    <string name="text_dialog_adding_students">To import students from an Excel sheet, select Auto, and to add students manually, select Manual.</string>
+
+    <!--    tap target strings-->
+    <string name="tap_title_search_class">Find classes easily</string>
+    <string name="tap_title_search_class_desc">Quickly access your classes by searching here.</string>
+
+    <string name="tap_title_click_hold">Select a Class</string>
+    <string name="tap_title_click_hold_desc">Tap and hold to select a class to modify or delete</string>
+
+    <string name="tap_title_edit_class">Edit Class Information</string>
+    <string name="tap_title_edit_class_desc">Tap to edit and update the details of the selected class</string>
+
+    <string name="tap_title_delete_class">Delete Classes</string>
+    <string name="tap_title_delete_class_desc">Tap to delete the selected classes</string>
+
+    <string name="tap_title_add_class">Create a New Class</string>
+    <string name="tap_title_add_class_desc">Tap to create a new class to your list</string>
+
+    <string name="tap_title_acount">Settings &amp; Account</string>
+    <string name="tap_title_acount_desc">Tap to manage your account settings and access extra help and feedback</string>
+
+    <string name="tap_title_import_students">Import Students List</string>
+    <string name="tap_title_import_students_des">Tap to import or add a list of students to this class</string>
+
+    <string name="tap_title_auto_add_students">Auto Add Students</string>
+    <string name="tap_title_auto_add_students_des">Tap to select an Excel file containing a list of students to add them automatically to this class</string>
+
+    <string name="tap_title_manual_add_students">Manual Add Students</string>
+    <string name="tap_title_manual_add_students_des">Tap to enter the first and last roll numbers of your class. Then, a list of students with roll numbers but no names will be added, and you can manually add the names of the students.</string>
+
+    <string name="tap_title_student_attendance_in_list">Attendance Indicator</string>
+    <string name="tap_title_student_attendance_in_list_des">View the overall attendance percentage for each student in the list. The percentage is shown in color, with higher percentages shown in green and lower percentages shown in red.</string>
+
+    <string name="tap_title_select_student">Select Students</string>
+    <string name="tap_title_select_student_des">Tap and hold to select a student to edit their name or delete them from the class list.</string>
+
+    <string name="tap_title_add_single_student">Add New Student</string>
+    <string name="tap_title_add_single_student_desc">Tap to add a new student to the existing class list.</string>
+
+    <string name="tap_title_take_attendance">Take Attendance</string>
+    <string name="tap_title_take_attendance_desc">Tap to record today\'s attendance. Attendance data with date will be automatically saved in secure cloud storage.</string>
+
+    <string name="tap_title_edit_student">Edit Student Name</string>
+    <string name="tap_title_edit_student_desc">Tap to edit the selected student\'s name.</string>
+
+    <string name="tap_title_delete_student">Delete Students</string>
+    <string name="tap_title_delete_student_desc">Tap to delete the selected students.</string>
+
+    <string name="tap_title_monthly_attendance_record">Monthly Attendance Report</string>
+    <string name="tap_title_monthly_attendance_record_desc">Tap to view the attendance report for each month of the current class students.</string>
+
+    <string name="tap_title_download_attendance_button">Download Attendance File</string>
+    <string name="tap_title_download_attendance_button_desc">Select a date range and click the download button to get the attendance record as an excel sheet. The default date range is from the first to the last attendance taken.</string>
+
+
+    <string name="tap_title_start_date_pick_for_attendance">Choose start date</string>
+    <string name="tap_title_start_date_pick_for_attendance_desc">Select a starting date for downloading attendance records</string>
+
+    <string name="tap_title_end_date_pick_for_attendance">Choose end date</string>
+    <string name="tap_title_end_date_pick_for_attendance_desc">Select an ending date for downloading attendance records</string>
+
+
+    <string name="tap_title_downloaded_attendance">View Downloaded Attendance</string>
+    <string name="tap_title_downloaded_attendance_desc">Tap to view the downloaded attendance report in an Excel sheet for a chosen date range.</string>
+
+    <string name="tap_title_share_downloaded_attendance">Share Attendance Report</string>
+    <string name="tap_title_share_downloaded_attendance_desc">Tap to share an Excel sheet containing the downloaded attendance record.</string>
+
+    <string name="tap_title_swipe_explain">Swipe to Mark Attendance</string>
+    <string name="tap_title_swipe_explain_desc">Swipe up the card to mark the current student as present and swipe down to mark them as absent. The next student\'s roll number will automatically appear after each swipe. Repeat this process until all students are marked.</string>
+
+    <string name="tap_title_card_student_roll_no">Last Digits of Roll Number</string>
+    <string name="tap_title_card_student_roll_no_desc">This circle displays the last few digits of the student\'s roll number.</string>
+
+    <string name="tap_title_card_student_attendance">Student Attendance Information</string>
+    <string name="tap_title_card_student_attendance_desc">The upper text displays the number of classes attended by the current student out of the total number of delivered classes. The lower text shows the overall attendance percentage.</string>
+
+    <string name="tap_title_change_to_click_mode">Switch to Click-Mode Attendance</string>
+    <string name="tap_title_change_to_click_mode_desc">Tap to switch from swipe-mode attendance to click-mode attendance.</string>
+
+    <string name="tap_title_change_to_swipe_mode">Switch to Swipe-Mode Attendance</string>
+    <string name="tap_title_change_to_swipe_mode_desc">Tap to switch from click-mode attendance to swipe-mode attendance.</string>
+
+    <string name="tap_title_taken_attendance_circle_on_swipe">Edit Previous Attendance</string>
+    <string name="tap_title_taken_attendance_circle_on_swipe_desc">Tap on the roll number bubbles to edit the attendance records of previously marked students.</string>
+
+    <string name="tap_title_taken_attendance_circle_after_taking">Edit Previous Attendance</string>
+    <string name="tap_title_taken_attendance_circle_after_taking_desc">Tap on the roll number bubbles to edit the attendance records of previously marked students.</string>
+
+    <string name="tap_title_strip_student_roll_no">Last Digits of Roll Number</string>
+    <string name="tap_title_strip_student_roll_no_desc">This circle displays the last few digits of the student\'s roll number.</string>
+
+    <string name="tap_title_click_attendance_explain">Mark Attendance by Clicking</string>
+    <string name="tap_title_click_attendance_explain_desc">Tap on any student\'s name to mark them as present. All other students will be marked as absent.</string>
+
+    <string name="tap_title_save_attendance_menu_item">Save Attendance Record</string>
+    <string name="tap_title_save_attendance_menu_item_desc">Tap to save the attendance records marked via click-based attendance method.</string>
+
+    <string name="tap_title_present_students_value_before_save_attendance">View Present Students</string>
+    <string name="tap_title_present_students_value_before_save_attendance_desc">Tap to see a list of all present students. To modify attendance for any student, click on their corresponding bubble.</string>
+
+    <string name="tap_title_absent_students_value_before_save_attendance">View Absent Students</string>
+    <string name="tap_title_absent_students_value_before_save_attendance_desc">Tap to see a list of all absent students. To modify attendance for any student, click on their corresponding bubble.</string>
+
+<!--    intro screen strings-->
+    <string name="intro_screen_1_title">Stress-free Attendance</string>
+    <string name="intro_screen_1_title_desc">Make attendance tracking stress-free with Query - our digital solution\n eliminates paper headaches</string>
+    <string name="intro_screen_2_title">Hassle-free Experience</string>
+    <string name="intro_screen_2_title_desc">Revolutionize attendance tracking with our easy and intuitive swipe-based system</string>
+    <string name="intro_screen_3_title">Easy Attendance Sharing</string>
+    <string name="intro_screen_3_title_desc">Effortlessly share and access attendance data with secure cloud storage and Excel exports</string>
+    <string name="max_students_in_class">150</string>
+
+<!--    excel import errors and note-->
+    <string name="excel_import_note_title">Note Before Import</string>
+    <string name="excel_import_note_title_desc">1. The Excel sheet must contain headings for roll number and name.\n
+        2. The sheet should only have roll numbers in numerical form, not alphanumeric.\n
+        3. The sheet should not contain more than 150 students.</string>
+
+    <string name="excel_import_error_rollno_heading">Roll-no heading not found in the selected sheet</string>
+    <string name="excel_import_error_name_heading">Student name heading not found in the selected sheet</string>
+    <string name="excel_import_error_empty_wrong">Either the Excel sheet is empty or incorrect</string>
+    <string name="excel_import_error_file_invalid">Invalid file or file not found</string>
+    <string name="excel_import_error_io_exception">Something went wrong while fetching students. Please try again.</string>
+
+    <string name="excel_import_error_150_students">The Selected Excel sheet contains more than 150 students. You cannot add more than 150 students.</string>
+    <string name="excel_import_error_alphanumeric">Either some or all roll numbers are not numeric values.</string>
+
+<!--    setting activity strings-->
+    <string name="help_and_feedback_email">bipil.niteesh.work@gmail.com</string>
+    <string name="help_and_feedback_subject_for_email">Query App: Help and Feedback</string>
+
+    <string name="no_internet_dialog_title_desc">Make sure wifi or cellular data is turned on and then try again</string>
+    <string name="no_internet_dialog_title">Something went wrong</string>
+
+<!--    shared prefs database names-->
+    <string name="intro_screen_shared_prefs_db">introScreenSharedPrefs</string>
+    <string name="tap_target_shared_pref_db">tapTargetGuideSharedPref</string>
+    <string name="cancel_attendance">Cancel attendance</string>
 
 </resources>

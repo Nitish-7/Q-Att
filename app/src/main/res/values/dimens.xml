@@ -13,8 +13,11 @@
     <dimen name="class_card_margin_horizontal">10dp</dimen>
     <dimen name="class_card_margin_vertical">5dp</dimen>
     <dimen name="class_card_corner">20dp</dimen>
-    <dimen name="student_attendance_percent_tv_size">25dp</dimen>
-    <dimen name="card_text_dim_name_atten">36dp</dimen>
-    <dimen name="card_text_atten_value_dim">56dp</dimen>
-    <dimen name="card_roll_text_dim">70dp</dimen>
+    <dimen name="student_attendance_percent_tv_size">20sp</dimen>
+    <dimen name="card_text_dim_name_atten">25sp</dimen>
+    <dimen name="card_text_atten_value_dim">35sp</dimen>
+    <dimen name="card_roll_text_dim">60sp</dimen>
+    <dimen name="tirai">36dp</dimen>
+    <dimen name="setting_content_margin_horizontal">25dp</dimen>
+    <dimen name="setting_content_elevation">2dp</dimen>
 </resources>

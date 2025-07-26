@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/classes_bottom_tab"
+        android:icon="@drawable/ic_class"
+        android:title="classes"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/class_add_place_holder"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/timetable_bottom_tab"
+        android:title="time table"
+        android:icon="@drawable/ic_calendar"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+</menu>
